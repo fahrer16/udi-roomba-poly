@@ -169,7 +169,7 @@ class Controller(polyinterface.Controller):
                             _blid = _value['blid']
                             _password = _value['password']
                             _name = _value['name']
-                            _address = 'rm' + _blid[-10:]
+                            _address = 'rm' + _blid[-10:].lower()
 
                             if _address not in self.nodes: #Check that node hasn't already been added to ISY
                                 if _address not in self._nodeQueue: #Check that node hasn't already been added to queue of roombas to be added to ISY
@@ -302,7 +302,7 @@ class BasicRoomba(polyinterface.Node):
             #LOGGER.debug('Current state on %s: %s', self.name, str(_state))
             if _state in STATES:
                 self.setDriver('GV1', STATES[_state])
-                _running = (_state in RUNNING_STATES)
+                _running = (STATES[_state] in RUNNING_STATES)
                 self.setDriver('ST', (0,100)[int(_running)])
         except Exception as ex:
             LOGGER.error("Error updating current state on %s: %s", self.name, str(ex))
