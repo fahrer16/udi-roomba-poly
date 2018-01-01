@@ -1,0 +1,35 @@
+<editors>
+  <editor id="bool">
+    <range uom="2" subset="0-1"/>
+  </editor>
+  <editor id="onoff">
+    <range uom="78" subset="0,100"/>
+  </editor>
+  <editor id="enum_states">
+    <range uom="25" subset="0-14" nls="ENUM_STATES"/>
+  </editor>
+  <editor id="percent">
+    <range uom="51" min="0" max="100" step="1" prec="0"/>
+  </editor>
+  <editor id="hours">
+    <range uom="20" min="0" max="300" step="10" prec="0"/>
+  </editor>
+  <editor id="enum_errors">
+    <range uom="25" subset="0-18" nls="ENUM_ERRORS"/>
+  </editor>
+  <editor id="full_bin_setting">
+    <range uom="25" subset="0-1" nls="ENUM_BIN_FINISH"/>
+  </editor>
+  <editor id="position">
+    <range uom="56" min="-10000" max="10000" step="1000" prec="0"/>
+  </editor>
+  <editor id="angle">
+    <range uom="14" min="-360" max="360" step="20" prec="0"/>
+  </editor>
+  <editor id="enum_passes">
+    <range uom="25" subset="0-3" nls="ENUM_PASSES"/>
+  </editor>
+  <editor id="enum_fanspeeds">
+    <range uom="25" subset="0-3" nls="ENUM_FAN"/>
+  </editor>
+</editors>

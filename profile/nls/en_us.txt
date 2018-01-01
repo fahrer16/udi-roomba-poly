@@ -1,0 +1,98 @@
+# controller
+ND-controller-NAME = Roomba Controller
+ND-controller-ICON = GenericCtl
+CMD-ctl-DISCOVER-NAME = Re-Discover
+ST-ctl-ST-NAME = NodeServer Online
+
+# node names
+ND-roomba980-NAME = Roomba 980
+ND-roomba980-ICON = MotionSensor
+
+ND-series900roomba-NAME = Series 900 Roomba
+ND-series900roomba-ICON = MotionSensor
+
+ND-series800roomba-NAME = Series 800 Roomba
+ND-series800roomba-ICON = MotionSensor
+
+ND-basicroomba-NAME = Basic Roomba
+ND-basicroomba-ICON = MotionSensor
+
+# Shared Roomba Names
+ST-roomba-ST-NAME = Running
+ST-roomba-GV1-NAME = State
+ST-roomba-GV2-NAME = Connected
+ST-roomba-BATLVL-NAME = Battery Level
+ST-roomba-GV3-NAME = Bin Present
+ST-roomba-GV4-NAME = WiFi Signal
+ST-roomba-GV5-NAME = Runtime
+ST-roomba-GV6-NAME = Error Active
+ST-roomba-ALARM-NAME = Error
+ST-roomba-GV7-NAME = Bin Present
+ST-roomba-GV8-NAME = Action on Full Bin
+ST-roomba-GV9-NAME = X Position
+ST-roomba-GV10-NAME = Y Position
+ST-roomba-ROTATE-NAME = Theta
+ST-roomba-GV11-NAME = Passes
+ST-roomba-GV12-NAME = Edge Clean
+ST-roomba-GV13-NAME = Fan Speed
+CMD-roomba-DON-NAME = Start
+CMD-roomba-DOF-NAME = Stop
+CMD-roomba-PAUSE-NAME = Pause
+CMD-roomba-RESUME-NAME = Resume
+CMD-roomba-DOCK-NAME = Dock
+CMD-roomba-PAUSE-NAME = Pause
+CMD-roomba-QUERY-NAME = Query
+CMD-roomba-SET_BIN_FINISH-NAME = Set Bin Finish Behavior
+CMD-roomba-SET_PASSES-NAME = Set Number of Passes
+CMD-roomba-SET_EDGE_CLEAN-NAME = Set Edge Clean Behavior
+CMD-roomba-SET_FAN_SPEED-NAME = Set Fan Speed
+
+
+ENUM_STATES-0 = Unknown
+ENUM_STATES-1 = Charging
+ENUM_STATES-2 = New Mission
+ENUM_STATES-3 = Running
+ENUM_STATES-4 = Resuming
+ENUM_STATES-5 = Returning to Recharge
+ENUM_STATES-6 = Recharging
+ENUM_STATES-7 = Stuck
+ENUM_STATES-8 = User Docking
+ENUM_STATES-9 = Docking
+ENUM_STATES-10 = Docking End Mission
+ENUM_STATES-11 = Cancelled
+ENUM_STATES-12 = Stopped
+ENUM_STATES-13 = Paused
+ENUM_STATES-14 = End Mission
+
+ENUM_ERRORS-0 = None
+ENUM_ERRORS-1 = Left or Right Wheel Hanging Down
+ENUM_ERRORS-2 = Debris Extractors Cannot Turn
+ENUM_ERRORS-3 = Unknown
+ENUM_ERRORS-4 = Unknown
+ENUM_ERRORS-5 = Left or Right Wheel Stuck
+ENUM_ERRORS-6 = Stuck on Edge
+ENUM_ERRORS-7 = Unknown
+ENUM_ERRORS-8 = Fan Stuck or Filter Clogged
+ENUM_ERRORS-9 = Bumper Stuck
+ENUM_ERRORS-10 = Left or Right Wheel not moving
+ENUM_ERRORS-11 = Internal Error
+ENUM_ERRORS-12 = Unknown
+ENUM_ERRORS-13 = Unknown
+ENUM_ERRORS-14 = Bin has bad connection
+ENUM_ERRORS-15 = Internal Error
+ENUM_ERRORS-16 = Bumped while running
+ENUM_ERRORS-17 = Cleaning job is incomplete
+ENUM_ERRORS-18 = Roomba cannot return to base
+
+ENUM_BIN_FINISH-0 = Continue
+ENUM_BIN_FINISH-1 = Finish
+
+ENUM_PASSES-0 = Not Set
+ENUM_PASSES-1 = One Pass
+ENUM_PASSES-2 = Two Passes
+ENUM_PASSES-3 = Automatic
+
+ENUM_FAN-0 = Not Set
+ENUM_FAN-1 = Eco
+ENUM_FAN-2 = Automatic
+ENUM_FAN-3 = Performance

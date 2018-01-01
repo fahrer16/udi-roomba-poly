@@ -1,0 +1,162 @@
+<nodeDefs>
+    <!-- NODE DEF from 5.0 document http://wiki.universal-devices.com/index.php?title=V50_MAIN -->
+    <!-- controller -->
+    <nodeDef id="controller" nls="ctl">
+        <editors />
+        <sts>
+			<st id="ST" editor="bool" />
+		</sts>
+        <cmds>
+            <sends />
+            <accepts>
+                <cmd id="DISCOVER" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+
+    <nodeDef id="roomba980" nls="roomba">
+        <editors />
+        <sts>
+          <st id="ST" editor="onoff"/>
+          <st id="GV1" editor="enum_states"/>
+          <st id="GV2" editor="bool" />
+          <st id="BATLVL" editor="percent"/>
+          <st id="GV3" editor="bool"/>
+          <st id="GV4" editor="percent"/>
+          <st id="GV5" editor="hours"/>
+          <st id="GV6" editor="bool"/>
+          <st id="ALARM" editor="enum_errors" hide="T"/>
+          <st id="GV7" editor="bool"/>
+          <st id="GV8" editor="full_bin_setting"/>
+          <st id="GV9" editor="position"/>
+          <st id="GV10" editor="position"/>
+          <st id="ROTATE" editor="angle"/>
+          <st id="GV11" editor="enum_passes"/>
+          <st id="GV12" editor="onoff"/>
+          <st id="GV13" editor="enum_fanspeeds"/>
+        </sts>
+        <cmds>
+            <sends />
+            <accepts>
+              <cmd id="DON"/>
+              <cmd id="DOF"/>
+              <cmd id="PAUSE"/>
+              <cmd id="RESUME"/>
+              <cmd id="DOCK"/>
+              <cmd id="QUERY"/>
+              <cmd id="SET_BIN_FINISH">
+                <p id="" editor="full_bin_setting" init="GV8"/>
+              </cmd>
+              <cmd id="SET_PASSES">
+                <p id="" editor="enum_passes" init="GV11"/>
+              </cmd>
+              <cmd id="SET_EDGE_CLEAN">
+                <p id="" editor="onoff" init="GV12"/>
+              </cmd>
+              <cmd id="SET_FAN_SPEED">
+                <p id="" editor="enum_fanspeeds" init="GV13"/>
+              </cmd>
+              </accepts>
+        </cmds>
+    </nodeDef>
+
+  <nodeDef id="series900roomba" nls="roomba">
+    <editors />
+    <sts>
+      <st id="ST" editor="onoff"/>
+      <st id="GV1" editor="enum_states"/>
+      <st id="GV2" editor="bool" />
+      <st id="BATLVL" editor="percent"/>
+      <st id="GV3" editor="bool"/>
+      <st id="GV4" editor="percent"/>
+      <st id="GV5" editor="hours"/>
+      <st id="GV6" editor="bool"/>
+      <st id="ALARM" editor="enum_errors" hide="T"/>
+      <st id="GV7" editor="bool"/>
+      <st id="GV8" editor="full_bin_setting"/>
+      <st id="GV9" editor="position"/>
+      <st id="GV10" editor="position"/>
+      <st id="ROTATE" editor="angle"/>
+      <st id="GV11" editor="enum_passes"/>
+      <st id="GV12" editor="onoff"/>
+    </sts>
+    <cmds>
+      <sends />
+      <accepts>
+        <cmd id="DON"/>
+        <cmd id="DOF"/>
+        <cmd id="PAUSE"/>
+        <cmd id="RESUME"/>
+        <cmd id="DOCK"/>
+        <cmd id="QUERY"/>
+        <cmd id="SET_BIN_FINISH">
+          <p id="" editor="full_bin_setting" init="GV8"/>
+        </cmd>
+        <cmd id="SET_PASSES">
+          <p id="" editor="enum_passes" init="GV11"/>
+        </cmd>
+        <cmd id="SET_EDGE_CLEAN">
+          <p id="" editor="onoff" init="GV12"/>
+        </cmd>
+      </accepts>
+    </cmds>
+  </nodeDef>
+
+  <nodeDef id="series800roomba" nls="roomba">
+    <editors />
+    <sts>
+      <st id="ST" editor="onoff"/>
+      <st id="GV1" editor="enum_states"/>
+      <st id="GV2" editor="bool" />
+      <st id="BATLVL" editor="percent"/>
+      <st id="GV3" editor="bool"/>
+      <st id="GV4" editor="percent"/>
+      <st id="GV5" editor="hours"/>
+      <st id="GV6" editor="bool"/>
+      <st id="ALARM" editor="enum_errors" hide="T"/>
+      <st id="GV7" editor="bool"/>
+      <st id="GV8" editor="full_bin_setting"/>
+    </sts>
+    <cmds>
+      <sends />
+      <accepts>
+        <cmd id="DON"/>
+        <cmd id="DOF"/>
+        <cmd id="PAUSE"/>
+        <cmd id="RESUME"/>
+        <cmd id="DOCK"/>
+        <cmd id="QUERY"/>
+        <cmd id="SET_BIN_FINISH">
+          <p id="" editor="full_bin_setting" init="GV8" />
+        </cmd>
+      </accepts>
+    </cmds>
+  </nodeDef>
+
+  <nodeDef id="basicroomba" nls="roomba">
+    <editors />
+    <sts>
+      <st id="ST" editor="onoff"/>
+      <st id="GV1" editor="enum_states"/>
+      <st id="GV2" editor="bool" />
+      <st id="BATLVL" editor="percent"/>
+      <st id="GV3" editor="bool"/>
+      <st id="GV4" editor="percent"/>
+      <st id="GV5" editor="hours"/>
+      <st id="GV6" editor="bool"/>
+      <st id="ALARM" editor="enum_errors" hide="T"/>
+    </sts>
+    <cmds>
+      <sends />
+      <accepts>
+        <cmd id="DON"/>
+        <cmd id="DOF"/>
+        <cmd id="PAUSE"/>
+        <cmd id="RESUME"/>
+        <cmd id="DOCK"/>
+        <cmd id="QUERY"/>
+      </accepts>
+    </cmds>
+  </nodeDef>
+  
+</nodeDefs>

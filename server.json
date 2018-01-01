@@ -1,0 +1,21 @@
+{
+  "name": "Roomba",
+  "docs": "https://github.com/fahrer16/udi-roomba-poly",
+  "type": "python3",
+  "executable": "roomba-poly.py",
+  "install": "install.sh",
+  "description": "Roomba node server for UDI ISY994i Polyglot v2",
+  "notice": "\"Roomba\" is trademarked., see https://github.com/NickWaterton/Roomba980-Python for more information on Roomba integration. This Node Server is neither developed by nor endorsed by Roomba, Universal Devices, Brian Feeney, developers of the Roomba980-Python Project or Dorita980, or any other company responsible for the manufacture, development, or distribution of Roomba robotic vacuums.\"\",",
+  "shortPoll": "5",
+  "longPoll": "60",
+  "credits": [
+    {
+      "title": "Roomba Node Server",
+      "author": "Brian Feeney (fahrer16)",
+      "version": "1.0.0",
+      "date": "December 30, 2017",
+      "source": "https://github.com/fahrer16/udi-roomba-poly",
+      "license": "https://raw.githubusercontent.com/fahrer16/udi-roomba-poly/master/LICENSE"
+    }
+  ]
+}
