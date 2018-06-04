@@ -237,6 +237,7 @@ class BasicRoomba(polyinterface.Node):
     def __init__(self, parent, primary, address, name, roomba):
         super().__init__(parent, primary, address, name)
         self.roomba = roomba
+        self.quality = -1
         self.connected = False
 
     def start(self):
@@ -339,7 +340,9 @@ class BasicRoomba(polyinterface.Node):
         try:
             _rssi = self.roomba.master_state["state"]["reported"]["signal"]["rssi"]
             _quality = int(max(min(2.* (_rssi + 100.),100),0))
-            self.setDriver('GV4', _quality)
+            if abs(_quality - self.quality) > 15: #Quality can change very frequently, only update ISY if it has changed by more than 15%
+                self.setDriver('GV4', _quality)
+                self.quality = _quality
         except Exception as ex:
             LOGGER.error("Error updating WiFi Signal Strength on %s: %s", self.name, str(ex))
 

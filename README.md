@@ -21,10 +21,10 @@ The Roomba980-Python Github linked above explains the limitations of connections
   2.1.  Follow instructions here for obtaining roomba blid and password needed for configuration: https://github.com/NickWaterton/Roomba980-Python
   2.2.  Use a key starting with "vacuum" (e.g. vacuum1, vacuum2, etc...)
   2.3.  Key value format: {"ip":"192.168.3.36", "blid":"6945841021309640","password":":1:1512838259:R0dzOYDrIVQHJFcR","name":"Upstairs Roomba"}  Note the use of double quotes
-
- 
+   
 ## Version History:
 1.0.0: Initial Release
+1.1.0: Only update WiFi strength in ISY if the reported value has changed by more than 15% since the last update
 
 ## Known Issues:
 1. Commands that allow for a parameter value to be passed don't seem to be present in admin console unless the profile is uploaded twice.  May be an issue with ISY994i (This was developed using version 5.0.10E).
