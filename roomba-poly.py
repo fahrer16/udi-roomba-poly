@@ -114,8 +114,8 @@ class Controller(polyinterface.Controller):
                     else:
                         _roomba = self._roombas[_address]
                         LOGGER.debug('Processing %s (%s) for addition', _roomba.roombaName, _address)
-                        #Check that info has been received from roomba by checking for a key that should be there regardless of roomba's capabilities (MAC address):
-                        if len(_roomba.master_state["state"]["reported"]["mac"]) > 0:
+                        #Check that info has been received from roomba by checking for the Roomba's capabilities being reported:
+                        if len(_roomba.master_state["state"]["reported"]["cap"]) > 0:
                             try:
                                 _name = str(_roomba.roombaName)
                                 LOGGER.debug('Getting capabilities from %s', _name)
