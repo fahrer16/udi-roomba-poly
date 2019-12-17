@@ -27,6 +27,7 @@ The Roomba980-Python Github linked above explains the limitations of connections
 1.1.0: Only update WiFi strength in ISY if the reported value has changed by more than 15% since the last update
 1.1.1: Corrected display name of parameter 'GV7' from 'Bin Present' to 'Bin Full'
 1.1.2: Updated requirements file to use forked repository of Roomba980 project.
+1.1.3: Update to account for changes to json reported from i7 series Roombas.
 
 ## Known Issues:
 1. Commands that allow for a parameter value to be passed don't seem to be present in admin console unless the profile is uploaded twice.  May be an issue with ISY994i (This was developed using version 5.0.10E).
